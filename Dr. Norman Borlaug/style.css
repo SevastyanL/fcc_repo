@@ -1,0 +1,51 @@
+body {
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+} 
+
+#main {
+  margin: 30px 5px;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#list {
+  min-width: 300px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#list li {
+  margin: 15px;
+}
+
+#img-div {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#wiki {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+#image {
+  margin: auto;
+}
+q, q + p{
+  font-style: italic;
+}
