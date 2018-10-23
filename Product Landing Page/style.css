@@ -13,14 +13,13 @@ a {
 /* ---- */
 
 body {
-   /* text-align: center;*/
     font-family: 'Lato', sans-serif;
     background:#eee;
 }
 
 .wrapper {
     position: relative;
-    margin-top: 80px;
+    margin-top: 100px;
 }
     
 header {
@@ -76,14 +75,133 @@ h1, #email, #btn {
 }
 
 #btn {
+    position: relative;
     display: block;
     height: 35px;
     width: 140px;
     border-radius: 4px;
     text-transform: uppercase;
     font-weight: 900;
+    box-shadow: 2px 2px 5px 2px;
+    background: #ccffff;
 }
 
+#btn:hover {
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
 
+@keyframes anim {
+    0% {
+        background-color: blue;
+        font-size: 5px;
+        top: 0px;
+      }
+      50% {
+        background-color: green;
+        top: 50px;
+        font-size: 30px;
+        width: 300px;
+        height: 100px;
+      }
+      100% {
+        background-color: #f3c5bd;
+        top: 0px;
+        font-size: 50px;
+        transform: rotate(360deg);
+        width: 400px;
+        height: 100px;
+      }
+}
 
+.qualities {
+    margin: 20px 20px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid hsl(0,0%,75%);
+    
+}
+.prop-def{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.prop-pic {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.prop {
+    border: 1px solid hsl(0,0%,75%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#video {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choice-item {
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    width: calc(100%  / 3);
+    border: 1px solid black;
+}
+
+@media (max-width: 600px){
+    .items {
+        flex-direction: column;
+    }
+}
+
+.choice-item li {
+    margin-top: 5px;
+}
+
+.item-header {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.choice-item input {
+    margin: 10px;
+    height: 50px;
+    width: 90px;
+    border-radius: 5px;
+    background: orange;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer {
+    padding: 15px;
+    background: hsl(0,0%,75%);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.references li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
 
