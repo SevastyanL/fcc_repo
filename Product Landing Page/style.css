@@ -13,20 +13,27 @@ a {
 /* ---- */
 
 body {
-    background: hsl(0,0%,75%);
-    text-align: center;
+   /* text-align: center;*/
     font-family: 'Lato', sans-serif;
-}
-main{
     background:#eee;
 }
+
+.wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+    
 header {
+    background: hsl(0,0%,75%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
-    /*position: fixed;*/
+    position: fixed;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    flex-shrink: 1;
 }
 #header-img {
     padding-top: 10px;
@@ -34,16 +41,49 @@ header {
     width: 300px;
 }
 .menu li {
-    border: 1px solid black;
+   margin: 5px;
+   margin-right: 30px;
 }
 .menu ul {
-    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-    flex-shrink: 1;
 }
-a {
-    text-decoration: none;
+
+@media (max-width: 700px) and (min-width: 500px){
+    .menu ul {
+        flex-direction: column;
+    }
 }
+
+.subscribe {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1, #email, #btn {
+    margin: 20px auto;
+}
+
+#email{
+    padding: 5px;
+    width: 300px;
+    max-width: 350px;
+    border-radius: 4px;
+}
+
+#btn {
+    display: block;
+    height: 35px;
+    width: 140px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+
+
